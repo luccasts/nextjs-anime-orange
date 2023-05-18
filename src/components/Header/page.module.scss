@@ -1,7 +1,6 @@
 .container{
    width: 100%;
-   background-image: url('../../image/background.jpg');
-   opacity: 0.4;
+   background-color: #050505;
    height: 75px;
    display: flex;
    justify-content: center;
@@ -23,7 +22,7 @@
 }
 
 .nav > h1 > a{
-   color:#101010;
+   color:#1b02ff;
    text-decoration: none   ;
 }
 

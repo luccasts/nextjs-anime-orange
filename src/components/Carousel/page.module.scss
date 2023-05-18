@@ -1,0 +1,82 @@
+/*Margin / Tamanho*/
+.container_container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    background-color:#050505;
+    
+    border-radius: .5rem;
+    height: 250px;
+    max-height: 320px;
+    position: relative;
+}
+
+/*Conjunto de itens*/
+.container_carousel{
+    display: flex;
+    /* Espaço entre as linhas*/
+    //gap: 1px;
+    /*Row -> tudo em linha, nowrap --> Tudo em uma linha*/
+    flex-flow: row nowrap; 
+    margin: auto auto;
+    overflow-x: auto;
+    padding: .5rem 0;
+
+    
+}
+
+.container_carousel::-webkit-scrollbar{
+display: none;
+}
+
+.container_carousel{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*Individual*/
+.container_carousel_item{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 .5rem;
+
+
+}
+
+//
+/*Imagem*/
+.container_carousel_image{
+    width: 100%;
+    max-width: 230px;
+    max-height: 330px;
+    height: 100% ;
+    flex-shrink: 0;
+}
+
+// .carousel_showScreen{
+    
+// }
+
+.arrow_left, .arrow_rigth{
+    position: absolute;
+    font-size: 1rem;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    border: none;
+    color: white;
+    width: 40px;
+    line-height: 250px;
+}
+
+.arrow_rigth{
+    right: auto;
+    left: 0;
+    background:linear-gradient(to left, transparent 0%, black 200%)
+     
+ }
+ .arrow_left{
+     right: 0;
+     left: auto;
+     background:linear-gradient(to right, transparent 0%, black 200%)
+ }
