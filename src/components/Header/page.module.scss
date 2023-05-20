@@ -1,6 +1,6 @@
 .container{
    width: 100%;
-   background-color: #050505;
+   background-color: #05050590;
    height: 75px;
    display: flex;
    justify-content: center;
@@ -22,18 +22,11 @@
 }
 
 .nav > h1 > a{
-   color:#1b02ff;
-   text-decoration: none   ;
-}
-
-.input {
-   display:flex;
-   align-items:center;
-}
-
-.input input{
-   width:100%;
-   height: 70%;
-   border-radius: .25rem;
+   //color: rgb(75, 61, 230);
+   color:white;
+   letter-spacing: 1.5px;
+   font-weight: 400;
+   text-decoration: none;
+   cursor: pointer;
 }
 

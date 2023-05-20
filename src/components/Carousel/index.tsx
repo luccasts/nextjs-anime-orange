@@ -7,7 +7,7 @@ export const Banner = () => {
     return (
         <>
             <Wrapper>
-                <div className={styles.container_container}>
+                <div className={styles.container}>
                     <div className={styles.container_carousel}>
                         <button  className={styles.arrow_left}> &#129082; </button>
                         <button  className={styles.arrow_rigth}> &#129080; </button>
