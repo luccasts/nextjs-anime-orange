@@ -1,10 +1,10 @@
 import { NextApiResponse, NextApiRequest } from 'next'
-import { Api } from '../../../../data'
-import { IContext } from '../../../interfaces'
+import { animeContext } from '../../../../data'
+import { IApianimeContext} from '../../../interfaces'
 
 export default function handler(
   _req: NextApiRequest,
-  res: NextApiResponse<IContext[]>
+  res: NextApiResponse<IApianimeContext[]>
 ) {
-  return res.status(200).json(Api)
+  return res.status(200).json(animeContext)
 }

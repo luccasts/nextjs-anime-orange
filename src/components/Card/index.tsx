@@ -1,9 +1,10 @@
+import AnimeComponent from "components/AnimeComponent"
 
-
-export default function Card (){
+export const Card = () => {
     return (
         <div>
-            Teste
+            Card
+            <AnimeComponent/>
         </div>
     )
 }
