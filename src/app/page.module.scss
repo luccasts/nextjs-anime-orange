@@ -1,3 +1,25 @@
 .loading{
-    margin: auto auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    margin: auto;
+    align-items: center;
 }
+
+.loading img {
+    animation: roll 6s infinite;
+    transform: roll(20deg);
+    border: 1px solid white;
+    border-radius: 7rem;
+}
+
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

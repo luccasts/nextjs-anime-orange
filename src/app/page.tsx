@@ -18,7 +18,7 @@ export default function Home() {
   );
 
   if (error) return "An error has occurred.";
-  if (isLoading) return (<div className={styles.loading}> <img  src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="" /></div>);
+  if (isLoading) return (<div className={styles.loading}> <img  src="http://localhost:3000/favicon.ico" alt="" /></div>);
   return (
     <>
       <Header />
