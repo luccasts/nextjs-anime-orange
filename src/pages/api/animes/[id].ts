@@ -1,6 +1,6 @@
 import { IApianimeContext, ResponseError } from "interfaces";
 import { NextApiRequest, NextApiResponse } from "next";
-import { animeContext } from "../../../../data";
+import { Api } from "../../../../data";
 
 export default function contextsHandler (
     req:NextApiRequest,
@@ -8,7 +8,8 @@ export default function contextsHandler (
 ){
     const {query} = req
     const {id} = query
-    const anime = animeContext.find((c) => c.id === id)
+    const animeC = Api.find((a) => (a.animeContext))
+    const anime = animeC?.animeContext.find( (a) => a.id === id)
 
     return anime 
     ?

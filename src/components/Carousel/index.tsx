@@ -1,44 +1,31 @@
-import React from "react"
+'use client'; 
+import useSWR from 'swr'
+import {IApiAnimeCarousel} from 'interfaces'
 import styles from "./page.module.scss"
+
 import Image from "next/image"
-import {Wrapper} from "../Wrapper"
 
-export const Banner = () => {
-    return (
-        <>
-            <Wrapper>
-                <div className={styles.container}>
-                    <div className={styles.container_carousel}>
-                        <button  className={styles.arrow_left}> &#129082; </button>
-                        <button  className={styles.arrow_rigth}> &#129080; </button>
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230}/>
-                        </div>
+const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230}/>
-                        </div>
+export default function Carousel() {
+  const { data, error, isLoading } = useSWR<IApiAnimeCarousel[]>('/api/carousel', fetcher)
 
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230}/>
-                        </div>
+  if (error) return <div>Failed to load</div>
+  if (isLoading) return <div>Loading...</div>
+  if (!data) return null
 
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230}/>
-                        </div>
-
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230}/>
-                        </div>
-
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230}/>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </Wrapper> 
-        </>
-    )
+  return (              
+    <div className={styles.container_carousel_item}>
+      {data.map((p) => (
+          <Image
+            className={`${styles.container_carousel_image}${styles.carousel_showScreen}`}
+            src={p.url}
+            alt="aside"
+            width={230}
+            height={230}
+            key={p.id}
+          />
+      ))}
+    </div>
+  );
 }

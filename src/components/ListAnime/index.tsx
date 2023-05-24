@@ -1,21 +1,22 @@
 'use client'; 
 import useSWR from 'swr'
 import {IApianimeContext} from 'interfaces'
-import AnimeContext from 'components/AnimeContext/AnimeContext'
+import styles from "./page.module.scss"
+import ListContent from 'components/ListContent';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
-export default function AnimePage() {
-  const { data, error, isLoading } = useSWR<IApianimeContext[]>('/api/animes', fetcher)
+export default function AnimeComponent() {
+   const { data, error, isLoading } = useSWR<IApianimeContext[]>('/api/animes', fetcher)
 
   if (error) return <div>Failed to load1</div>
   if (isLoading) return <div>Loading...</div>
   if (!data) return null
 
   return (
-    <ul>
+    <ul className={styles.ul}>
       {data.map((p) => (
-        <AnimeContext key={p.id} apiAnime={p} />
+          <ListContent key={p.id} apiAnime={p} />
       ))}
     </ul>
   )

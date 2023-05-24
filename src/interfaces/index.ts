@@ -4,7 +4,11 @@ export interface IApianimeContext  {
         subtitle: string;
         duration: string;
         img: string; 
-}
+} 
+
+export interface IApiAnimeCarousel { 
+        "id": string; 
+        "url": string; }[]; 
 
 
 // export interface IApianimeContext  {
@@ -15,7 +19,7 @@ export interface IApianimeContext  {
 //         duration: string;
 //         img: string;}[]; 
 //     animeList: { "id": string; }[];
-//     animeBanner: { 
+//     animeCarousel: { 
 //         "id": string; 
 //         "url": string; }[]; 
 // }

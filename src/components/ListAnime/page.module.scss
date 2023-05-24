@@ -1,0 +1,46 @@
+.ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    justify-content: center;
+    background:linear-gradient(to top, transparent 0%, #1e1e1e 100%);
+    border-radius: .5rem;
+}
+
+@media screen and (min-width: 600px){
+    
+    .ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+   
+}
+
+@media screen and (min-width: 870px){
+    
+    .ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+   
+}
+
+
+@media screen and (min-width: 922px){
+    
+    .ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+   
+}
+
+@media screen and (min-width: 1200px){
+    
+    .ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+   
+}
+
