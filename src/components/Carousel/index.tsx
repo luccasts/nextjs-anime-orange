@@ -15,17 +15,17 @@ export default function Carousel() {
   if (!data) return null
 
   return (              
-    <div className={styles.container_carousel_item}>
+    <div className={styles.container_carousel}>
       {data.map((p) => (
-          <Image
+        <div className={styles.carousel_item}  key={p.id}>
+          <img
             className={`${styles.container_carousel_image}${styles.carousel_showScreen}`}
             src={p.url}
-            alt="aside"
-            width={230}
-            height={230}
-            key={p.id}
+            alt="imagem banner"
           />
+        </div>
       ))}
+      
     </div>
   );
 }

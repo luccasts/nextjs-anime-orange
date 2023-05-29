@@ -8,10 +8,8 @@ export const Search = () => {
     function handleClick () {
         if(handleInput == false  || handleInput == undefined){
             setHandleInput(true) 
-            console.log(handleInput)
         }else {
             setHandleInput(false)
-            console.log(handleInput)
         }
     }
     return (

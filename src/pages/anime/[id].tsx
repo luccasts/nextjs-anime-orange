@@ -29,6 +29,6 @@ export default function AnimeId ()  {
     if (!data) return null
     
     return (  
-          <DashboardLayout  children={<AnimePage  data={data}/> } />     
+          <DashboardLayout  children={<AnimePage  data={data}/> } />   
     )
 }

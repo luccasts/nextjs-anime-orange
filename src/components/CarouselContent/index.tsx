@@ -20,31 +20,7 @@ export const CarouselContent = () => {
                     <div className={styles.container_carousel}>
                         <button  className={styles.arrow_left}> &#129082; </button>
                         <button  className={styles.arrow_rigth}> &#129080; </button>
-                        <Carousel />
-                        {/* <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230} priority={true}/>
-                        C</div>
-
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230} priority={true}/>
-                        </div>
-
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230} priority={true}/>
-                        </div>
-
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230} priority={true}/>
-                        </div>
-
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230} priority={true}/>
-                        </div>
-
-                        <div className={styles.container_carousel_item}>
-                            <Image className={`${styles.container_carousel_image }${styles.carousel_showScreen}`} src="/images/aside3.png" alt="aside" width={230} height={230} priority={true}/>
-                        </div> */}
-                        
+                        <Carousel />                        
                     </div>
                 </div>
                 
