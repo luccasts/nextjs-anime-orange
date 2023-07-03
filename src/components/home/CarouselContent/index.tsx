@@ -1,9 +1,9 @@
 import React from "react"
 import styles from "./page.module.scss"
     
-import {Wrapper} from "../Wrapper"
+import {Wrapper} from "../../_ui/Wrapper"
 import { IApiAnimeCarousel } from "interfaces"
-import Carousel from "components/Carousel"
+import Carousel from "components/home/Carousel"
 
 
 interface ICarousel {

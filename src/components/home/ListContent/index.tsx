@@ -4,14 +4,11 @@ import { IApianimeContext } from "interfaces";
 import styles from "./page.module.scss"
 import Image from "next/image"
 
-
-
 type ApiProps = {
     apiAnime: IApianimeContext
 }
 
 export default function ListContent({apiAnime}:ApiProps){
-
     return (
         <li className={styles.li}>   
             <div className={styles.div}> 

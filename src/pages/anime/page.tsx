@@ -1,7 +1,8 @@
 import { IApianimeContext } from 'interfaces'
-import { Header } from "components/Header"
+import { Header } from "components/_ui/Navbar"
 
-import { CardAnime } from "components/CardAnime";
+import { CardAnime } from "components/anime/CardAnime";
+
 
 
 type ApiProps = {
@@ -9,11 +10,15 @@ type ApiProps = {
 }
 
 
-export default function AnimePage({data}:ApiProps) {
+
+export default function Page({data}:ApiProps) {
   return (
     <>
     <Header />
     <CardAnime data={data}/>
+    <h1>{data?.title}</h1> 
+    <h3>{data?.subtitle}</h3>
+    <h4></h4>
     </>
   )
 }

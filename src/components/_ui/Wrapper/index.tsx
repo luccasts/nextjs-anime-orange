@@ -1,4 +1,4 @@
-import IChildren from "./type"
+import IChildren from "../../../interfaces"
 import styles from  './page.module.scss'
 
 

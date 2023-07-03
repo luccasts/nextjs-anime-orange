@@ -1,8 +1,8 @@
 "use client"
 import styles from './page.module.scss'
-import { Header } from 'components/Header'
-import { CardList } from 'components/CardList'  
-import { CarouselContent } from 'components/CarouselContent'
+import { Header } from 'components/_ui/Navbar'
+import { CardList } from 'components/home/CardList'  
+import { CarouselContent } from 'components/home/CarouselContent'
 
 import useSWR from "swr";
 

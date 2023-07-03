@@ -1,6 +1,6 @@
-import AnimeContent from "components/ListAnime"
-import { Title } from "components/Title"
-import { Wrapper } from "components/Wrapper"
+import AnimeContent from "components/home/ListAnime"
+import { Title } from "components/_ui/Title"
+import { Wrapper } from "components/_ui/Wrapper"
 
 export const CardList = () => {
     return (

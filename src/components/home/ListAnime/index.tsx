@@ -2,7 +2,7 @@
 import useSWR from 'swr'
 import {IApianimeContext} from 'interfaces'
 import styles from "./page.module.scss"
-import ListContent from 'components/ListContent';
+import ListContent from 'components/home/ListContent';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 

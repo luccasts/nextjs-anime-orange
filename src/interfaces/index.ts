@@ -4,6 +4,7 @@ export interface IApianimeContext  {
         subtitle: string;
         duration: string;
         img: string; 
+        
 } 
 
 export interface IApiAnimeCarousel { 
@@ -26,4 +27,8 @@ export interface IApiAnimeCarousel {
 
 export interface ResponseError {
     message: string
+}
+
+export default interface IChildren {
+        children: JSX.Element[] | JSX.Element;
 }

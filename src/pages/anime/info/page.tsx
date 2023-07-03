@@ -1,7 +1,7 @@
 import { IApianimeContext } from 'interfaces'
-import { Header } from "components/Header"
+import { Header } from "components/_ui/Navbar"
 
-import { InfoAnime } from 'components/InfoAnime';
+import { InfoAnime } from 'components/info/InfoAnime';
 
 
 type ApiProps = {
