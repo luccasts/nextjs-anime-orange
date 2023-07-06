@@ -17,10 +17,13 @@
     border-radius: .2rem;
 }
 .li .img {
-    width: 290px;
+   
     object-fit:fill;
-    height: 150px;
+    width:(100% - 3%);
+    max-width: 720px;
     margin-bottom: .2rem;
+    display: block;
+    margin: 0 auto;
 
 }
 

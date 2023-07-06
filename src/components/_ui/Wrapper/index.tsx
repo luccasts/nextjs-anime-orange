@@ -5,7 +5,7 @@ import styles from  './page.module.scss'
 export function Wrapper ({children}:IChildren ) {
     return (
         <div className={styles.Wrapper} >
-            {children}
+            {children }
         </div>
     )
 }
