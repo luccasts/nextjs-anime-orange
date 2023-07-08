@@ -2,10 +2,10 @@ import IChildren from "../../../interfaces"
 import styles from  './page.module.scss'
 
 
-export function Wrapper ({children}:IChildren ) {
+export function WrapperSection ({children}:IChildren ) {
     return (
-        <div className={styles.Wrapper} >
+        <section className={styles.Wrapper} >
             {children }
-        </div>
+        </section>
     )
 }

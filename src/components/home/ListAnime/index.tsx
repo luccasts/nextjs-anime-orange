@@ -14,10 +14,12 @@ export default function AnimeComponent() {
   if (!data) return null
 
   return (
-    <ul className={styles.ul}>
-      {data.map((p) => (
-          <ListContent key={p.id} apiAnime={p} />
-      ))}
-    </ul>
+    <section className={styles.section_container}>
+      <ul className={styles.ul}>
+        {data.map((p) => (
+            <ListContent key={p.id} apiAnime={p} />
+        ))}
+      </ul>
+    </section>
   )
 }

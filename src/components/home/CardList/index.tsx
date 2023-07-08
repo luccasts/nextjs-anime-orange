@@ -1,13 +1,18 @@
 import AnimeContent from "components/home/ListAnime"
 import { Title } from "components/_ui/Title"
-import { Wrapper } from "components/_ui/Wrapper"
+import { WrapperMain } from "components/_ui/Wrapper/wrapperMain"
+import { WrapperSection } from "components/_ui/Wrapper/wrapperSection"
 
 export const CardList = () => {
     return (
-        <Wrapper>
-            <Title title={"LANÇAMENTOS"} />                
+        <> 
+        <WrapperMain>
+            <WrapperSection>
+                <Title title={"LANÇAMENTOS"} /> 
+            </WrapperSection>               
             <AnimeContent/>
-        </Wrapper>
+        </WrapperMain>
+        </>
             
     )
 }

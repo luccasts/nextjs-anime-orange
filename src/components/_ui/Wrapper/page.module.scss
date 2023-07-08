@@ -3,3 +3,12 @@
     width:  calc(100% - 12%) ;
     margin: 0 auto;
 }
+.WrapperMain{
+    min-height: 1000px;
+}
+.Footer{
+    display: flex; 
+    flex:1;
+
+    background-color: rgb(98, 98, 98);
+}

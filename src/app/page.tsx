@@ -1,4 +1,5 @@
 "use client"
+import { Footer } from 'components/_ui/Footer'
 import styles from './page.module.scss'
 import { Header } from 'components/_ui/Navbar'
 import { CardList } from 'components/home/CardList'  
@@ -23,6 +24,7 @@ export default function Home() {
       <Header />
       <CarouselContent/>
       <CardList />
+      <Footer />
     </>
   )
 }

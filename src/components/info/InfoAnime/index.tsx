@@ -1,4 +1,4 @@
-import { Wrapper } from "components/_ui/Wrapper"
+import { Wrapper } from "components/_ui/Wrapper/wrapperDiv"
 import {IApianimeContext} from "../../../interfaces"
 
 import Image from "next/image"

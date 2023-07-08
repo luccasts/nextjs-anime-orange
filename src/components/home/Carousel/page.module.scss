@@ -8,6 +8,9 @@
     align-items: center;
     margin: 0 .2rem;
     height:300px;
+    list-style: none;
+    position: relative;
+
 }
 
 //
@@ -16,18 +19,31 @@
 // .carousel_showScreen{
     
 // }
+
+
 .container_carousel img{
    height: 280px;
+   width: 100%;
    max-width: 300px;
    object-fit: cover;
-   transition: 1s;
+   transition: 1ms;
    margin-right:10px;
 
 
 }
 
+
+.container_carousel img:hover{
+
+    max-width: 100%;
+}
+
 .container_carousel img:hover{
     cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    
 }
 
 
