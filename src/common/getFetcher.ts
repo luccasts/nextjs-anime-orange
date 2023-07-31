@@ -7,4 +7,3 @@ export const getFetcher = async (url:string ) => {
     }
     return data
 }
-

@@ -47,35 +47,35 @@ export const Api = [
         title: "Kimetsu no Yaiba",
         subtitle: "1",
         duration: "24",
-        img: "/images/ep/kimetsu-yaiba/ep1.jpg",
+        img: "/images/ep/kimetsu-yaiba/t1ep1.jpg",
       },
       {
         id: "2",
         title: "Goblin Slayer",
         subtitle: "11",
         duration: "24",
-        img: "/images/ep/goblin-slayer/ep11.jpg",
+        img: "/images/ep/goblin-slayer/t1ep11.jpg",
       },
       {
         id: "3",
         title: "Bunny Girl",
         subtitle: "1",
         duration: "24",
-        img: "/images/ep/bunny-girl/ep1.webp",
+        img: "/images/ep/bunny-girl/t1ep1.webp",
       },
       {
         id: "4",
         title: "KonoSuba",
         subtitle: "3",
         duration: "24",
-        img: "/images/ep/kono-suba/ep3.jpg",
+        img: "/images/ep/kono-suba/t1ep3.jpg",
       },
       {
         id: "5",
         title: "Kakegurui",
         subtitle: "1",
         duration: "24",
-        img: "/images/ep/kakegurui/ep5.png",
+        img: "/images/ep/kakegurui/t1ep5.png",
       },
     ],
 
@@ -84,7 +84,7 @@ export const Api = [
         id: "1",
       },
     ],
-
+    //máximo 7
     animeCarousel: [
       {
         id: "1",
@@ -100,27 +100,19 @@ export const Api = [
       },
       {
         id: "4",
-        url: "/images/banner1.jpg",
+        url: "/images/banner4.jpg",
       },
       {
         id: "5",
-        url: "/images/banner2.jpg",
+        url: "/images/banner5.jpg",
       },
       {
         id: "6",
-        url: "/images/banner3.png",
+        url: "/images/banner6.jpg",
       },
       {
         id: "7",
-        url: "/images/banner1.jpg",
-      },
-      {
-        id: "8",
-        url: "/images/banner2.jpg",
-      },
-      {
-        id: "9",
-        url: "/images/banner3.png",
+        url: "/images/banner7.jpeg",
       },
     ],
     

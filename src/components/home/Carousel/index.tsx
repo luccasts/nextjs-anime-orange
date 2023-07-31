@@ -3,12 +3,17 @@ import useSWR from 'swr'
 import {IApiAnimeCarousel} from 'interfaces'
 import styles from "./page.module.scss"
 
-import Image from "next/image"
+import { motion } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import React from 'react';
+
+
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 export default function Carousel() {
   const { data, error, isLoading } = useSWR<IApiAnimeCarousel[]>('/api/carousel', fetcher)
+  const carousel = React.useRef() as React.MutableRefObject<HTMLInputElement>;
 
   if (error) return <div>Failed to load</div>
   if (isLoading) return <div>Loading...</div>
@@ -16,6 +21,7 @@ export default function Carousel() {
 
   return (              
     <ul className={styles.container_carousel}>
+      <motion.div ref={carousel} className={styles.container_carousel} dragConstraints={{ right: 0, left: -1500 }} drag="x">
       {data.map((p) => (
         <li className={styles.carousel_item}  key={p.id}>
           <img
@@ -25,7 +31,7 @@ export default function Carousel() {
           />
         </li>
       ))}
-      
+      </motion.div>
     </ul>
   );
 }

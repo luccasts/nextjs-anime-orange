@@ -11,3 +11,4 @@ export default function getAnimes (query:any){
   return ({data, error, isLoading})
 
 }
+
