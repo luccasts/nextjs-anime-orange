@@ -16,7 +16,7 @@ export default function Page({data}:ApiProps) {
   return (
     <>
     <Header />
-    <CardAnime  data={data}/>
+      <CardAnime  data={data}/>
     <Footer/>
     </>
   )

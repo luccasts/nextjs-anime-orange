@@ -2,11 +2,11 @@
 import useSWR from 'swr'
 import {IApianimeContext} from 'interfaces'
 import styles from "./page.module.scss"
-import ListContent from 'components/home/ListContent';
+import SectionLiDiv from 'components/home/SectionList/ListContent';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
-export default function AnimeComponent() {
+export default function SectionList() {
    const { data, error, isLoading } = useSWR<IApianimeContext[]>('/api/animes', fetcher)
 
   if (error) return <div>Failed to load1</div>
@@ -17,7 +17,7 @@ export default function AnimeComponent() {
     <section className={styles.section_container}>
       <ul className={styles.ul}>
         {data.map((p) => (
-            <ListContent key={p.id} apiAnime={p} />
+            <SectionLiDiv key={p.id} apiAnime={p} />
         ))}
       </ul>
     </section>

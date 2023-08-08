@@ -2,16 +2,12 @@ import React from "react"
 import styles from "./page.module.scss"
     
 import {WrapperNav} from "../../_ui/Wrapper/wrapperNav"
-import { IApiAnimeCarousel } from "interfaces"
-import Carousel from "components/home/Carousel"
+import Carousel from "components/home/SectionCarousel/Carousel"
 
 
-interface ICarousel {
-    data:IApiAnimeCarousel
-}
 
 
-export const CarouselContent = () => {
+export const SectionCarousel = () => {
     return (
         <section>
             <WrapperNav>

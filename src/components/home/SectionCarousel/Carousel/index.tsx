@@ -6,6 +6,7 @@ import styles from "./page.module.scss"
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import React from 'react';
+import Link from 'next/link';
 
 
 
@@ -22,15 +23,17 @@ export default function Carousel() {
   return (              
     <ul className={styles.container_carousel}>
       <motion.div ref={carousel} className={styles.container_carousel} dragConstraints={{ right: 0, left: -1500 }} drag="x">
-      {data.map((p) => (
-        <li className={styles.carousel_item}  key={p.id}>
-          <img
-            className={`${styles.container_carousel_image}${styles.carousel_showScreen}`}
-            src={p.url}
-            alt="imagem banner"
-          />
-        </li>
-      ))}
+        {data.map((p) => (
+          <li className={styles.carousel_item}  key={p.id}>
+            <Link href={p.url} className={styles.container_link}>
+              <img
+                className={`${styles.container_carousel_image}${styles.carousel_showScreen}`}
+                src={p.url}
+                alt="imagem banner"
+              />
+            </Link>
+          </li>
+          ))}
       </motion.div>
     </ul>
   );

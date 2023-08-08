@@ -2,8 +2,8 @@
 import { Footer } from 'components/_ui/Footer'
 import styles from './page.module.scss'
 import { Header } from 'components/_ui/Navbar'
-import { CardList } from 'components/home/CardList'  
-import { CarouselContent } from 'components/home/CarouselContent'
+import { Main} from 'components/home/Main'  
+import { SectionCarousel } from 'components/home/SectionCarousel'
 
 import useSWR from "swr";
 
@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <CarouselContent/>
-      <CardList />
+      <SectionCarousel/>
+      <Main />
       <Footer />
     </>
   )
