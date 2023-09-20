@@ -1,42 +1,56 @@
 import Link from "next/link"
 import styles from "./page.module.scss"
 import { WrapperFooter } from "../Wrapper/wrapperFooter"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export const Footer = () => {
     
     return (
         <WrapperFooter>
-            <h1>LOGO L</h1>
-            <section className={styles.header}>
-                <nav className={styles.nav}>
-                <ul>
-                    <li>
-                        <Link href={"/"}>Anime Brand</Link>
-                    </li>
-                    <li>
-                        <Link href={"/"}>Sobre</Link>
-                    </li>
+            <div className={styles.FooterBackground}>
 
-                    <li>
-                        <Link href={"/"}>+Filmes</Link>
-                    </li>
-                </ul>
-                </nav> 
-            </section>
+                                
+                    
 
-            <section>
-                <h4>RedeSociais</h4>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link href={"/"}>Linkedin</Link>
-                        </li>
-                        <li>
-                            <Link href={"/"}>Github</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
+
+                <section className={styles.FooterSection}>
+                    <nav className={styles.FooterNav}>
+                        <div className={styles.FooterLink}>
+                            <h4>
+                                <Link href={"/"}>
+                                    Anime Brand
+                                </Link>
+                            </h4> 
+                        </div>
+                        <ul className={` ${styles.FooterUl} ${styles.FooterUlLeft} ${styles.FooterLink}`}>
+                            <li>
+
+                            </li>
+                            <li>
+                                <Link href={"/"}>Sobre</Link>
+                            </li>
+
+                            <li>
+                                <Link href={"/"}>+Filmes</Link>
+                            </li>
+                        </ul>
+                    </nav> 
+                </section>
+
+                <section className={styles.FooterSection}>
+                    <h4>Rede Sociais</h4>
+                    <nav>
+                        <ul className={` ${styles.FooterUl} ${styles.FooterLink}`}>
+                            <li>
+                                <Link href={"/"}>< FaLinkedinIn/> Linkedin </Link>
+                            </li>
+                            <li>
+                                <Link href={"/"}><FaGithub />Github</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
         </WrapperFooter>
     )
 }

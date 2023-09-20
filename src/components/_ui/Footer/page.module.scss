@@ -1,0 +1,67 @@
+.FooterBackground{
+    display: flex;
+    max-width: 1280px;
+    width:  calc(100% - 12%) ;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.FooterUlLeft {
+    display: block;
+    
+}
+
+
+.FooterUl{
+    list-style: none;
+}
+
+.FooterUl li{
+    margin-top: .3rem;
+}
+
+.FooterLink a{
+    text-decoration: none;
+    color:rgb(180, 180, 180);
+    font-size: 0.9rem;
+    text-transform:uppercase;
+}
+
+
+
+.FooterUl a svg{
+    margin-right: .2rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.FooterLogo{
+    margin: calc(100% - 99%) calc(100% - 98%);
+
+    
+}
+.FooterLogo img{
+    width: 1rem;
+   
+    
+}
+
+.FooterSection{
+    margin: calc(100% - 99%)  calc(100% - 96%);
+}
+
+.FooterSection h4{
+    font-size: 1.3rem;
+    color:rgba(242, 154, 250, 0.657);
+    text-transform:uppercase;
+}
+
+.FooterSection h4 a{
+    font-size: 1.3rem;
+    color:rgba(242, 154, 250, 0.657);
+    text-transform:uppercase;
+}
+
