@@ -28,7 +28,7 @@ export default function Carousel() {
             <Link href={p.url} className={styles.container_link}>
               <img
                 className={`${styles.container_carousel_image}${styles.carousel_showScreen}`}
-                src={p.url}
+                src={p.img}
                 alt="imagem banner"
               />
             </Link>

@@ -4,11 +4,13 @@ export interface IApianimeContext  {
         subtitle: string;
         duration: string;
         img: string; 
+        url:string;
         
 } 
 
 export interface IApiAnimeCarousel { 
-        "id": string; 
+        "id": string;
+        "img": string; 
         "url": string; }[]; 
 
 
