@@ -46,6 +46,7 @@ export const Api = [
         id: "1",
         title: "Kimetsu no Yaiba",
         subtitle: "1",
+        eps:'26',
         duration: "24",
         img: "/images/ep/kimetsu-yaiba/t1ep1.jpg",
         url:"https://www.youtube.com/embed/VQGCKyvzIM4"
@@ -54,6 +55,7 @@ export const Api = [
         id: "2",
         title: "Goblin Slayer",
         subtitle: "11",
+        eps:'13',
         duration: "24",
         img: "/images/ep/goblin-slayer/t1ep11.jpg",
         url:"https://www.youtube.com/embed/7qnhoB_cHSg?si=9pwRzt2iRPav28Z_"
@@ -63,6 +65,7 @@ export const Api = [
         title: "Bunny Girl",
         subtitle: "1",
         duration: "24",
+        eps:'13',
         img: "/images/ep/bunny-girl/t1ep1.webp",
         url:"https://www.youtube.com/embed/o0TZj_d3Yfg?si=QUm5xJtn-3vMWvtU"
       },
@@ -71,6 +74,7 @@ export const Api = [
         title: "KonoSuba",
         subtitle: "3",
         duration: "24",
+        eps:"10",
         img: "/images/ep/kono-suba/t1ep3.jpg",
         url:"https://www.youtube.com/embed/N1AO7k2o78g?si=RR4AQ5p5mcCd9qqB"
       },
@@ -79,6 +83,7 @@ export const Api = [
         title: "Kakegurui",
         subtitle: "1",
         duration: "24",
+        eps:"12",
         img: "/images/ep/kakegurui/t1ep5.png",
         url:"https://www.youtube.com/embed/cTlHQiRNVl0?si=kaELsB2NKEyYRjK3"
       },

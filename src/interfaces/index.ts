@@ -3,8 +3,10 @@ export interface IApianimeContext  {
         title: string;
         subtitle: string;
         duration: string;
+        eps:string;
         img: string; 
         url:string;
+
         
 } 
 

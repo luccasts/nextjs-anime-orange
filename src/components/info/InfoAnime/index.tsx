@@ -1,6 +1,6 @@
-import { Wrapper } from "components/_ui/Wrapper/wrapperDiv"
+import { WrapperMain } from "components/_ui/Wrapper/wrapperMain"
 import {IApianimeContext} from "../../../interfaces"
-
+import styles from "./page.module.scss"
 import Image from "next/image"
 
 interface ApiProps {
@@ -9,11 +9,17 @@ interface ApiProps {
 
 export const InfoAnime = ({data}:ApiProps) => {
     return (
-        <Wrapper>
-            <Image className={''} src={data.img} alt="aside" width={100} height={100}/> 
-            <h1>{data.title}</h1> 
-            <h3>{data.subtitle}</h3>
-            <h4>Conteúdo</h4>
-        </Wrapper>
+        <WrapperMain>
+            <section className={styles.InfoSection}>
+                <Image className={''} src={data.img} alt="aside" width={300} height={220}/> 
+                <div className={styles.InfoSectionDiv}>
+                    <h1>{data.title}</h1> 
+                    <h4>Episódios: {data.eps}</h4>
+                    <h4>Catégoria</h4>   
+                </div>
+                
+            </section>
+            
+        </WrapperMain>
     )
 }
