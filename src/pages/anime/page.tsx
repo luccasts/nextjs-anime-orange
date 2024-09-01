@@ -1,5 +1,5 @@
 import { IApianimeContext } from 'interfaces'
-import { Header } from "components/_ui/Navbar"
+import { Header } from "components/_ui/Nav"
 
 import { CardAnime } from "components/anime/CardAnime";
 import { Footer } from 'components/_ui/Footer';

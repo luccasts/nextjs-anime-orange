@@ -1,12 +1,7 @@
 import { useRouter } from "next/router"
-import useSWR from 'swr'
-
-import {IApianimeContext, ResponseError} from "../../interfaces"
 import Page from "./page"
 import DashboardLayout from "./layout"
-import { getFetcher } from "common/getFetcher"
 import getAnimes from "services/getFecher"
-
 export default function AnimeId ()  {
     const {query} = useRouter()
     const {data, error, isLoading } = getAnimes(query)
