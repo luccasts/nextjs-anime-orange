@@ -1,4 +1,4 @@
-import { IApianimeContext } from 'interfaces'
+import { IAPIanimeContext } from 'interfaces'
 import { Header } from "components/_ui/Nav"
 
 import { CardAnime } from "components/anime/CardAnime";
@@ -7,7 +7,7 @@ import { Footer } from 'components/_ui/Footer';
 
 
 type ApiProps = {
-  data: IApianimeContext
+  data: IAPIanimeContext
 }
 
 

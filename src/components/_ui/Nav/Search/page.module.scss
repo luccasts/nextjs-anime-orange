@@ -29,11 +29,15 @@
     position: absolute;
     right: 0;
 }
-
-.BsLeftSearch{
-    padding: 5px;
+.BbButton{
+    border: none;
     left: 0px;
     position: absolute;
+    background: transparent;
+}
+.BsLeftSearch{
+    padding: 5px;
+    
     color: white;
     border-right: 1px solid rgb(126, 126, 126);
     font-size: 25px;

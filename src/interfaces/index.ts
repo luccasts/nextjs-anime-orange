@@ -1,22 +1,32 @@
-export interface IApianimeContext  {
+export interface IAPIanimeContext {
         id: string;
         title: string;
         subtitle: string;
         duration: string;
-        eps:string;
-        img: string; 
-        url:string;
+        eps: string;
+        img: string;
+        url: string;
 
-        
-} 
 
-export interface IApiAnimeCarousel { 
+}
+
+export interface IAPIAnimeCarousel {
         "id": string;
-        "img": string; 
-        "url": string; }[]; 
+        "img": string;
+        "url": string;
+}[];
+export interface IAPIAnimeDetais {
+        "id": string;
+        "img": string;
+        "url": string;
+        "description" : string;
+        "title": string;
+        "eps":string;
+}[];
 
 
-// export interface IApianimeContext  {
+
+// export interface IAPIanimeContext  {
 //     animeContext: { 
 //         id: string;
 //         title: string;
@@ -30,7 +40,7 @@ export interface IApiAnimeCarousel {
 // }
 
 export interface ResponseError {
-    message: string
+        message: string
 }
 
 export default interface IChildren {

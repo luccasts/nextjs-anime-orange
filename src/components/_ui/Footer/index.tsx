@@ -27,12 +27,10 @@ export const Footer = () => {
 
                             </li>
                             <li>
-                                <Link href={"/"}>Sobre</Link>
+                                <Link href={"/animes"}>Animes</Link>
                             </li>
 
-                            <li>
-                                <Link href={"/"}>+Filmes</Link>
-                            </li>
+                            
                         </ul>
                     </nav> 
                 </section>
@@ -42,10 +40,10 @@ export const Footer = () => {
                     <nav>
                         <ul className={` ${styles.FooterUl} ${styles.FooterLink}`}>
                             <li>
-                                <Link href={"/"}>< FaLinkedinIn/> Linkedin </Link>
+                                <a target="_blank" href={"https://www.linkedin.com/in/lucastsilva-dev/"}>< FaLinkedinIn/> Linkedin </a>
                             </li>
                             <li>
-                                <Link href={"/"}><FaGithub />Github</Link>
+                                <a target="_blank" href={"https://github.com/luccasts"}><FaGithub />Github</a>
                             </li>
                         </ul>
                     </nav>

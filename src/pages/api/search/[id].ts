@@ -1,10 +1,10 @@
-import { IApianimeContext, ResponseError } from "interfaces";
+import { IAPIanimeContext, ResponseError } from "interfaces";
 import { NextApiRequest, NextApiResponse } from "next";
 import { Api } from "../../../../data";
 
-export default function contextsHandler(
+export default function contextshandlerAPI(
     req: NextApiRequest,
-    res: NextApiResponse<IApianimeContext | ResponseError>
+    res: NextApiResponse<IAPIanimeContext | ResponseError>
 ) {
     const { query } = req
     const { id }:any = query
@@ -16,6 +16,6 @@ export default function contextsHandler(
         ? 
         res.status(200).json(anime)
         :
-        res.status(500).json({ message: `context of this ${id} not found` })
+        res.status(500).json({ message: `Não foi possível encontrar esse contexto: ${id} ` })
 
 }

@@ -1,11 +1,13 @@
-import useSWR from 'swr'
-import { IApianimeContext } from 'interfaces'
+"use client"
+import { IAPIanimeContext } from 'interfaces'
 import styles from "./page.module.scss"
 import SectionLiDiv from 'components/_ui/SectionList/ListContent';
+import handleSWR from 'services/handleSWR';
 
 
 
-export default function SectionList({ data, error, isLoading }: any) {
+export default function SectionList() {
+  const {data, error, isLoading} = handleSWR()
   if (error) return <div>Failed to load</div>
   if (isLoading) return <div>Loading...</div>
   if (!data) return null
@@ -13,10 +15,11 @@ export default function SectionList({ data, error, isLoading }: any) {
   return (
       <section className={styles.section_container}>
         <ul className={styles.ul}>
-          {data.map((p: IApianimeContext) => (
+          {data.map((p: IAPIanimeContext) => (
             <SectionLiDiv key={p.id} apiAnime={p} />
           ))}
         </ul>
       </section> 
+
   )
 }

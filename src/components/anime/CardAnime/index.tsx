@@ -1,12 +1,12 @@
 
 import { WrapperMain } from "components/_ui/Wrapper/wrapperMain"
-import { IApianimeContext } from "interfaces"
+import { IAPIanimeContext } from "interfaces"
 import Image from "next/image"
 import styles from "./page.module.scss"
 import Link from "next/link"
 
 type ApiProps = {
-    data: IApianimeContext  
+    data: IAPIanimeContext  
     // |
 }
   

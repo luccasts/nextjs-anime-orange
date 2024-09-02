@@ -1,29 +1,34 @@
 "use client"
 import { BsSearch, BsX } from "react-icons/bs";
 import styles from "./page.module.scss"
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { Input } from "./Input";
 
 export const Search = () => {
-    const [handleInput, setHandleInput] = useState<Boolean>()
-
+    const [input, setInput] = useState<Boolean>()
+    const [search, setSearch] = useState('')
     function handleClick() {
-        if (handleInput == false || handleInput == undefined) {
-            setHandleInput(true)
+        if (input == false || input == undefined) {
+            setInput(true)
         } else {
-            setHandleInput(false)
+            setInput(false)
         }
     }
-
+    function handleSearch(event: FormEvent<HTMLFormElement>) {
+        event.preventDefault()
+        if (search.length >= 3) {
+            window.location.pathname = `/search/${search}`
+        }
+    }
     return (
-        <form className={styles.input} >
-            {handleInput
+        <form onSubmit={(e) => handleSearch(e)} className={styles.input} >
+            {input
                 ?
                 <>
-                <button>
-                    <BsSearch className={styles.BsLeftSearch} />
-                </button>
-                    <Input />
+                    <button className={styles.BbButton}>
+                        <BsSearch className={styles.BsLeftSearch} />
+                    </button>
+                    <Input search={search} setSearch={setSearch} />
                     <BsX className={styles.BsX} onClick={() => handleClick()} />
                 </>
                 :

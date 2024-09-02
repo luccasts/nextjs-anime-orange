@@ -1,69 +1,71 @@
 /*Margin / Tamanho*/
-.container{
+.container {
     display: flex;
     justify-content: center;
     margin: 1rem auto;
-   
+
     //background-color:#3303932d;
-    box-shadow: rgba(215, 86, 234, 0.15) 1.95px 1.95px 2.6px;
-    
-    border-radius: .5rem;
+    // box-shadow: rgba(215, 86, 234, 0.15) 1.95px 1.95px 2.6px;
+
+    border-radius: 1rem;
 
     max-height: 320px;
     position: relative;
 }
 
 /*Conjunto de itens*/
-.container_carousel{
-    
+.container_carousel {
+
     display: flex;
     /* Espaço entre as linhas*/
     //gap: 1px;
     /*Row -> tudo em linha, nowrap --> Tudo em uma linha*/
-    flex-flow: row nowrap; 
+    flex-flow: row nowrap;
     margin: auto auto;
     overflow-x: auto;
 
 
 }
 
-.container_carousel::-webkit-scrollbar{
-display: none;
+.container_carousel::-webkit-scrollbar {
+    display: none;
 }
 
-.container_carousel{
+.container_carousel {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 /*Individual*/
-.container_carousel_item{
+.container_carousel_item {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0 .2rem;
     height: 100%;
-    
+
 
 
 }
 
 //
 /*Imagem*/
-.container_carousel_image{
+.container_carousel_image {
     width: 100%;
     max-width: 230px;
     max-height: 330px;
-    height: 100% ;
+    height: 100%;
     flex-shrink: 0;
 
-    
+
 }
 
 // .carousel_showScreen{
-    
+
 // }
 
-.arrow_left, .arrow_rigth{
+.arrow_left,
+.arrow_rigth {
     position: absolute;
     margin: auto;
     align-items: center;
@@ -78,14 +80,14 @@ display: none;
     line-height: 50px;
 }
 
-.arrow_rigth{
+.arrow_rigth {
     right: auto;
     left: 0;
-    background:linear-gradient(to left, transparent 0%, black 200%)
-     
- }
- .arrow_left{
-     right: 0;
-     left: auto;
-     background:linear-gradient(to right, transparent 0%, black 200%)
- }
+    background: linear-gradient(to left, transparent 0%, rgb(12, 12, 12) 200%);
+}
+
+.arrow_left {
+    right: 0;
+    left: auto;
+    background: linear-gradient(to right, transparent 0%, rgb(12, 12, 12) 200%);
+}

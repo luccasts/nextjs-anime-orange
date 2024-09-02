@@ -1,10 +1,8 @@
 'use client'; 
 import useSWR from 'swr'
-import {IApiAnimeCarousel} from 'interfaces'
+import {IAPIAnimeCarousel} from 'interfaces'
 import styles from "./page.module.scss"
-
 import { motion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
 import React from 'react';
 import Link from 'next/link';
 
@@ -13,7 +11,7 @@ import Link from 'next/link';
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 export default function Carousel() {
-  const { data, error, isLoading } = useSWR<IApiAnimeCarousel[]>('/api/carousel', fetcher)
+  const { data, error, isLoading } = useSWR<IAPIAnimeCarousel[]>('/api/carousel', fetcher)
   const carousel = React.useRef() as React.MutableRefObject<HTMLInputElement>;
 
   if (error) return <div>Failed to load</div>
