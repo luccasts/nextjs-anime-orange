@@ -1,12 +1,13 @@
 import { NextApiResponse, NextApiRequest } from 'next'
 import { Api } from '../../../../data'
-import { IAPIanimeContext } from '../../../interfaces'
+import { IAnimeAPI, ResponseError } from '../../../interfaces'
 
-export default function handlerAPI(
+export default function handlerAnimeAPI(
   _req: NextApiRequest,
-  res: NextApiResponse<IAPIanimeContext[] | undefined>
+  res: NextApiResponse<IAnimeAPI[] | undefined  | ResponseError>
 ) {
-  const animeContext = Api.find((a) => a.animeContext.find((a) => a))
-  const anime = animeContext?.animeContext
+  const animeContext = Api.find((a) => a.animes.find((a) => a))
+  const anime = animeContext?.animes
   return res.status(200).json(anime)
+ 
 }

@@ -4,9 +4,9 @@ import {IAPIAnimeDetais, ResponseError} from "../interfaces"
 
 import { getFetcher } from "common/getFetcher"
 
-export default function getDetails(query:any){
+export default function handleQueryID(query:any){
     const {data, error, isLoading} =useSWR<
-    IAPIAnimeDetais, ResponseError>(() => (`http://localhost:3000/api/details/${query.id}`), getFetcher)
+    IAPIAnimeDetais, ResponseError>(() => (query.id ? `http://localhost:3000/api/animes/${query.id}`: null), getFetcher)
     
   
     return ({data, error, isLoading})

@@ -1,12 +1,14 @@
 import { NextApiResponse, NextApiRequest } from 'next'
 import { Api } from '../../../../data'
-import { IAPIAnimeCarousel } from '../../../interfaces'
+import { IAnimeCarouselAPI } from '../../../interfaces'
 
-export default function handlerAPI(
+export default function handlerCarouselAPI(
   _req: NextApiRequest,
-  res: NextApiResponse<IAPIAnimeCarousel[] | undefined>
+  res: NextApiResponse<IAnimeCarouselAPI[] | undefined>
 ) {
-  const animeContext = Api.find((a) => a.animeContext.find((a) => a))
-  const anime = animeContext?.animeCarousel
-  return res.status(200).json(anime)
+  // const animeContext = Api.find((a) => a.animeContext.find((a) => a))
+  const carousel = Api.filter((a) => a.animes.filter((a) => a.carousel))
+  const anime = carousel.filter((a) => a.animes.map((a) => a.carousel ))
+  console.log(anime)
+  return res.status(200).json(carousel)
 }
