@@ -1,10 +1,11 @@
 import { useRouter } from "next/router"
 import Page from "./page"
-import handleSearch from "services/handleSearch"
-import handleQueryID from "services/handleQueryID"
+import handleIDSearch from "services/handleIDSearch"
+import handleTitleSearch from "services/handleTitleSearch"
 export default function SearchId ()  {
     const { query } = useRouter()
-    const { data, error, isLoading } = handleQueryID(query)
+    const { data, error, isLoading } = handleTitleSearch(query)
+    console.log(data)
     return (  
           <Page data={data} isLoading={isLoading} error={error}/>   
     )

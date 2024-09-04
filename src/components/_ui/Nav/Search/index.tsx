@@ -14,14 +14,14 @@ export const Search = () => {
             setInput(false)
         }
     }
-    function handleSearch(event: FormEvent<HTMLFormElement>) {
+    function handleIDSearch(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
         if (search.length >= 3) {
             window.location.pathname = `/search/${search}`
         }
     }
     return (
-        <form onSubmit={(e) => handleSearch(e)} className={styles.input} >
+        <form onSubmit={(e) => handleIDSearch(e)} className={styles.input} >
             {input
                 ?
                 <>

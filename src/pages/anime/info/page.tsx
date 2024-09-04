@@ -1,4 +1,4 @@
-import { IAPIAnimeDetais } from 'interfaces'
+import { IAnimeAPI } from 'interfaces'
 import { Header } from "components/_ui/Nav"
 
 import { InfoAnime } from 'components/info/InfoAnime';
@@ -7,7 +7,7 @@ import RootLayout from 'app/layout';
 
 
 type ApiProps = {
-  data: IAPIAnimeDetais
+  data: IAnimeAPI
 }
 
 

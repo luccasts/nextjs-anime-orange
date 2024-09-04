@@ -4,7 +4,7 @@ import { Header } from "components/_ui/Nav";
 import { Title } from "components/_ui/Title";
 import { WrapperMain } from "components/_ui/Wrapper/wrapperMain";
 import { WrapperSection } from "components/_ui/Wrapper/wrapperSection";
-import SectionLiDiv from "components/_ui/SectionList/ListContent";
+import EpLi from "components/_ui/EpsList/EpLi";
 
 
 export default function SearchPage({ data, error, isLoading }: any) {
@@ -15,7 +15,7 @@ export default function SearchPage({ data, error, isLoading }: any) {
       <WrapperMain>
         <WrapperSection>
           <Title title={"PESQUISA"} />
-          { data ? <SectionLiDiv apiAnime={data} />  : <h1>Nome informado não encontrado!</h1>
+          { data ? <EpLi apiAnime={data} />  : <h1>Nome informado não encontrado!</h1>
           }
         </WrapperSection>
       </WrapperMain>

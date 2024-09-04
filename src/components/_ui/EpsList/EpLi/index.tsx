@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { IAnimeAPI, IAnimeAPIOLD, IAPIanimeContext } from "interfaces";
+import { IAnimeAPI } from "interfaces";
 
 import styles from "./page.module.scss"
+import { handleDateDiff } from "common/handleDateDiff";
+
 
 
 type ApiProps = {
@@ -9,11 +11,14 @@ type ApiProps = {
 
 }
 
-export default function SectionLiDiv({ apiAnime}: ApiProps) {
+export default function EpLi({ apiAnime}: ApiProps) {
+    // const filter = apiAnime.eps.filter(())
     const img = (apiAnime.eps.map((e: { img:string; }) => e.img))
     const ep = (apiAnime.eps.map((e: { ep: string; }) => e.ep))
-    console.log(img, ep)
-
+    if(img.length > 1) {
+        handleDateDiff(apiAnime)
+    }
+    //arrumar as conts e as img e o ep
     return (
         <li className={styles.li}>
             <div className={styles.div}>
@@ -21,10 +26,11 @@ export default function SectionLiDiv({ apiAnime}: ApiProps) {
                     <img className={`${styles?.img}`} src={img} alt={apiAnime?.title} />
                     <div className={styles.div__title}>
                         <h3 className={`${styles.title}`}>{apiAnime?.title}</h3>
-                        <h4> Episódio {ep}</h4>
+                        <h4 className={`${styles.subtitle}`}> Episódio {ep}</h4>
                     </div>
                 </Link>
             </div>
         </li>
     )
+    
 }
