@@ -1,8 +1,9 @@
 import { IAnimeSearchAPI } from 'interfaces'
 import { Header } from "components/_ui/Nav"
 
-import { CardAnime } from "components/anime/CardAnime";
+
 import { Footer } from 'components/_ui/Footer';
+import { WatchPoster } from 'components/watch/WatchPoster';
 
 
 
@@ -16,7 +17,7 @@ export default function Page({data}:ApiProps) {
   return (
     <>
     <Header />
-      <CardAnime  data={data}/>
+      <WatchPoster  data={data}/>
     <Footer/>
     </>
   )

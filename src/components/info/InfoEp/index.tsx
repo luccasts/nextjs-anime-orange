@@ -1,4 +1,4 @@
-import { dealReplacement } from "common/dealReplacement";
+import { handleLink } from "common/handleLink";
 import Link from "next/link";
 
 interface IEps {
@@ -11,14 +11,11 @@ interface IEps {
 
 
 export default function InfoEp({data, ep, url, img, id }: IEps) {
-
-    let title:string = data.title.replaceAll(" ", "-").toLocaleLowerCase()
-    const replace = dealReplacement(title)
-
+    const link = handleLink(data.title, ep)
     
     return (
         <li>
-            <Link href={`http://localhost:3000/watch/${replace}-episodio-${ep}`}>              
+            <Link href={link}>              
                     <img src={img} />
                     <h3>{data.title} {ep}</h3>
             </Link>

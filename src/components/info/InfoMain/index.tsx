@@ -11,7 +11,6 @@ interface IEps{
 }
 
 export const InfoAnime = ({ data }: any) => {
-    console.log(data)
     const poster = data.carousel.img
     const category = data.details.category
     const img: any = data.eps.map((d: { img: any }) => d.img)

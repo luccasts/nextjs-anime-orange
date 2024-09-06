@@ -1,7 +1,5 @@
 import { useRouter } from "next/router"
 import Page from "./page"
-
-import handleIDSearch from "services/handleIDSearch"
 import getEp from "services/getEp"
 
 export default function AnimeId ()  {

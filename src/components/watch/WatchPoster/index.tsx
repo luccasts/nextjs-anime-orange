@@ -1,21 +1,11 @@
-
 import { WrapperMain } from "components/_ui/Wrapper/wrapperMain"
-import { IAPIanimeContext } from "interfaces"
-import Image from "next/image"
 import styles from "./page.module.scss"
 import Link from "next/link"
 
-type ApiProps = {
-    data: IAPIanimeContext  
-    // |
-}
-  
 
-export const CardAnime = ({data}:ApiProps) => {
-    const url = data.map((d:string) => d.url)
-    const subtitle = data.map((d:string) => d.ep)
-    // const url = data.eps.map((d) => d.url)
-    // const subtitle = data.eps.map((d) => d.ep)
+export const WatchPoster = ({data}:any) => {
+    const url = data.map((d:any) => d.url);
+    const subtitle = data.map((d:any) => d.ep);
     return (
         <WrapperMain>
             <section className={`${styles.SectionIframe}`}>
@@ -29,6 +19,5 @@ export const CardAnime = ({data}:ApiProps) => {
             </section>
            
         </WrapperMain>
-            
     )
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { IAnimeAPI } from "interfaces";
 
 import styles from "./page.module.scss"
+import { handleLink } from "common/handleLink";
 
 
 
@@ -12,7 +13,7 @@ type ApiProps = {
 }
 
 export default function EpLi({ apiAnime}: ApiProps) {    
-    // const filter = apiAnime.eps.filter(())
+
     let img:any = (apiAnime.eps.map((e: { img:string; }) => e.img))
     let ep:any = (apiAnime.eps.map((e: { ep: string; }) => e.ep))
     const eps = (apiAnime.eps)
@@ -23,11 +24,14 @@ export default function EpLi({ apiAnime}: ApiProps) {
         }
         img = last?.img
         ep  = last?.ep
+        
     }
+    const link = handleLink(apiAnime.title, ep)
+
     return (
         <li className={styles.li}>
             <div className={styles.div}>
-                <Link href="/anime/[id]" as={`/anime/${apiAnime?.id}`}>
+                <Link href="/watch/[title]" as={link}>
                     <img className={`${styles?.img}`} src={img} alt={apiAnime?.title} />
                     <div className={styles.div__title}>
                         <h3 className={`${styles.title}`}>{apiAnime?.title}</h3>
