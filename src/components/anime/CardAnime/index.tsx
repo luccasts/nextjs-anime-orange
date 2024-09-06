@@ -12,8 +12,10 @@ type ApiProps = {
   
 
 export const CardAnime = ({data}:ApiProps) => {
-    const url = data.eps.map((d) => d.url)
-    const subtitle = data.eps.map((d) => d.ep)
+    const url = data.map((d:string) => d.url)
+    const subtitle = data.map((d:string) => d.ep)
+    // const url = data.eps.map((d) => d.url)
+    // const subtitle = data.eps.map((d) => d.ep)
     return (
         <WrapperMain>
             <section className={`${styles.SectionIframe}`}>

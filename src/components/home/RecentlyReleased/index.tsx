@@ -8,7 +8,7 @@ export default function RecentlyReleased() {
     if (error) return <div>Failed to load</div>
     if (isLoading) return <div>Loading...</div>
     if (!data) return null
-  
+
     return (
         <EpsList data={data}/>
     )

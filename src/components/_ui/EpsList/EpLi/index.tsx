@@ -2,7 +2,7 @@ import Link from "next/link";
 import { IAnimeAPI } from "interfaces";
 
 import styles from "./page.module.scss"
-import { handleDateDiff } from "common/handleDateDiff";
+
 
 
 
@@ -11,14 +11,19 @@ type ApiProps = {
 
 }
 
-export default function EpLi({ apiAnime}: ApiProps) {
+export default function EpLi({ apiAnime}: ApiProps) {    
     // const filter = apiAnime.eps.filter(())
-    const img = (apiAnime.eps.map((e: { img:string; }) => e.img))
-    const ep = (apiAnime.eps.map((e: { ep: string; }) => e.ep))
+    let img:any = (apiAnime.eps.map((e: { img:string; }) => e.img))
+    let ep:any = (apiAnime.eps.map((e: { ep: string; }) => e.ep))
+    const eps = (apiAnime.eps)
     if(img.length > 1) {
-        handleDateDiff(apiAnime)
+        let last
+        for(let i =0; i < img.length; i++){
+            last = eps[i]
+        }
+        img = last?.img
+        ep  = last?.ep
     }
-    //arrumar as conts e as img e o ep
     return (
         <li className={styles.li}>
             <div className={styles.div}>

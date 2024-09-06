@@ -50,34 +50,26 @@ export interface IAnimeSearchAPI{
             }[];
 }
 
-export interface IAnimeAPIOLD {
-        id: string;
-        title: string;
-        eps: [{
-                img: any;
-                ep: any;
-                forEach: any;
-                map(arg0: (d: any) => any): unknown;
-                "1": {
-                        duration: string;
-                        url: string;
-                        img: string;
-                };
-                "11"?: undefined;
-                "3"?: undefined;
-                "5"?: undefined;
-        }];
-        carousel: {
-                url: string;
-                img: string;
+export interface ApiProps {
+        apiAnime: {
+            map: any;
+            id:string,
+            title:string,
+            carousel:{
+                url:string,
+                img:string,
+            },
+            details:{
+                description:string,
+                img:string,
+            },
+            eps: [
+                {id:string, ep:string, duration:string, url:string}
+            ],
+    
         };
-        details: {
-                description: string;
-                eps: string;
-                category: string[];
-        };
+    
 }
-
 
 
 export interface ResponseError {
