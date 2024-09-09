@@ -55,13 +55,13 @@
 
 .FooterSection h4{
     font-size: 1.3rem;
-    color:rgba(242, 154, 250, 0.657);
+    color:var(--font-color-footer);
     text-transform:uppercase;
 }
 
 .FooterSection h4 a{
     font-size: 1.3rem;
-    color:rgba(242, 154, 250, 0.657);
+    color:var(--font-color-footer);
     text-transform:uppercase;
 }
 

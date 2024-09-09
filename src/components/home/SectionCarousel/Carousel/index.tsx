@@ -1,36 +1,25 @@
-'use client'; 
-
-import {IAnimeAPI} from 'interfaces'
+'use client';
 import styles from "./page.module.scss"
 import { motion } from 'framer-motion';
 import React from 'react';
-import Link from 'next/link';
 import getAnimes from 'services/getAnimes';
+import CarouselLi from "./CarouselLi";
+
 
 
 export default function Carousel() {
-  const { data, error, isLoading } = getAnimes()
+  const { data }: any = getAnimes()
   const carousel = React.useRef() as React.MutableRefObject<HTMLInputElement>;
 
-  if (error) return <div>Failed to load</div>
-  if (isLoading) return <div>Loading...</div>
-  if (!data) return null
+  return (
+    <motion.div ref={carousel} className={styles.container_carousel} dragConstraints={{ right: 0, left: -700 }} drag="x">
+      <ul className={styles.container_carousel}>
 
-  return (              
-    <ul className={styles.container_carousel}>
-      <motion.div ref={carousel} className={styles.container_carousel} dragConstraints={{ right: 0, left: -1500 }} drag="x">
-        {data.map((p) => (
-          <li className={styles.carousel_item}  key={p.id}>
-            <Link href={p.carousel.url} className={styles.container_link}>
-              <img
-                className={`${styles.container_carousel_image}${styles.carousel_showScreen}`}
-                src={p.carousel.img}
-                alt="imagem banner"
-              />
-            </Link>
-          </li>
-          ))}
-      </motion.div>
-    </ul>
+        {data?.map((p: any) => (
+          <CarouselLi key={p.id} data={p} />
+        ))}
+
+      </ul>
+    </motion.div>
   );
 }

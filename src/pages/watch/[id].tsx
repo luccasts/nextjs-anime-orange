@@ -9,7 +9,7 @@ export default function AnimeId ()  {
     if (error) return <div>{error.message}</div>
     if(isLoading) return <div>Loading...</div>
     if (!data) return null
-    
+
     return (  
           <Page  data={data}/>   
     )

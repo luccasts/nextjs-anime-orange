@@ -1,9 +1,8 @@
 "use client"
-
-import handleSWR from "services/handleSWR"
 import styles from "./page.module.scss"
+import getAnimes from "services/getAnimes"
 export default function Loading():any {
-    const { error, isLoading } = handleSWR()
+    const { error, isLoading }:any = getAnimes()
     if (error) return (
         <div>
             Ocorreu o erro {error}.

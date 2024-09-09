@@ -33,9 +33,9 @@ export default function EpLi({ apiAnime}: ApiProps) {
             <div className={styles.div}>
                 <Link href="/watch/[title]" as={link}>
                     <img className={`${styles?.img}`} src={img} alt={apiAnime?.title} />
-                    <div className={styles.div__title}>
+                    <div className={styles.div_title}>
                         <h3 className={`${styles.title}`}>{apiAnime?.title}</h3>
-                        <h4 className={`${styles.subtitle}`}> Episódio {ep}</h4>
+                        <h4 className={`${styles.subtitle}`}>Episódio {ep}</h4>
                     </div>
                 </Link>
             </div>

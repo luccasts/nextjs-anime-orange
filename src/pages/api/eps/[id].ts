@@ -4,7 +4,7 @@ import { Api } from "../../../../data";
 
 export default function handleIDEpsAPI(
     req: NextApiRequest,
-    res: NextApiResponse<  IAnimeAPI | ResponseError | any>
+    res: NextApiResponse<  IAnimeAPI | ResponseError |any >
 ) {
     const { query } = req
     const { id } = query
@@ -12,9 +12,9 @@ export default function handleIDEpsAPI(
     const anime = animeContext?.animes.find((a) => a.eps.find((e) => e.id === id ))
     
 
-    return anime
+    return anime?.eps.filter((e) => e.id === id)
         ?
-        res.status(200).json(anime?.eps.filter((e) => e.id === id))
+        res.status(200).json([anime?.eps.filter((e) => e.id === id), anime])
         :
         res.status(500).json({ message: `Não possível encontrar esse contexto: ${id}` })
 

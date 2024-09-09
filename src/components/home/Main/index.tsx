@@ -6,13 +6,8 @@ import RecentlyReleased from "../RecentlyReleased"
 
 export const Main= () => {
     return (
-        <> 
         <WrapperMain>
-            <WrapperSection>
-                <Title title={"LANÇAMENTOS"} /> 
-            </WrapperSection>
             <RecentlyReleased />                            
-        </WrapperMain>
-        </>       
+        </WrapperMain>     
     )
 }

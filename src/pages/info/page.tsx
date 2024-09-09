@@ -1,9 +1,8 @@
-import { IAnimeAPI, IAnimeSearchAPI } from 'interfaces'
+import { IAnimeSearchAPI } from 'interfaces'
 import { Header } from "components/_ui/Nav"
-
 import { InfoAnime } from 'components/info/InfoMain';
 import { Footer } from 'components/_ui/Footer';
-import RootLayout from 'app/layout';
+import '../../app/globals.css'
 
 
 type ApiProps = {

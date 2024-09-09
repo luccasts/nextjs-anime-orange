@@ -1,24 +1,16 @@
-import { IAnimeSearchAPI } from 'interfaces'
 import { Header } from "components/_ui/Nav"
-
-
 import { Footer } from 'components/_ui/Footer';
 import { WatchPoster } from 'components/watch/WatchPoster';
+import '../../app/globals.css'
 
-
-
-type ApiProps = {
-  data: IAnimeSearchAPI
-}
-
-
-
-export default function Page({data}:ApiProps) {
+export default function WatchPage({ data }: any) {
+  const ep: any = data[0]
+  const anime: any = data[1]
   return (
     <>
-    <Header />
-      <WatchPoster  data={data}/>
-    <Footer/>
+      <Header />
+        <WatchPoster ep={ep} data={anime}/>
+      <Footer />
     </>
   )
 }
