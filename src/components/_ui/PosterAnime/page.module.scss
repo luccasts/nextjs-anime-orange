@@ -7,7 +7,6 @@
     margin:1rem auto;
     background-size: contain;
     
-    
 }
 .li .div {
    
@@ -20,7 +19,7 @@
 .li .img {
    
     object-fit:fill;
-    width:(100% - 3%);
+    width:100%;
     
     max-width: 720px;
     margin-bottom: .2rem;
@@ -57,36 +56,7 @@ li .subtitle{
 @media screen and (min-width: 600px){
     
     .li {
-        width: 600px;
-    }
-    
-   
-}
-
-@media screen and (min-width: 870px){
-    
-    .li {
-        width: 500px;
-    }
-    
-   
-}
-
-
-@media screen and (min-width: 922px){
-    
-    .li {
-        width: 400px;
-    }
-    
-   
-}
-
-@media screen and (min-width: 1200px){
-    
-    .li {
         width: 300px;
     }
-    
-   
 }
+

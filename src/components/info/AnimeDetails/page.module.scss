@@ -1,7 +1,50 @@
-.InfoSection {
+.infoSection {
     display: flex;
+    flex-direction: row;
+    color: rgb(236, 236, 236);
+    gap: 8px;
 }
-.InfoSectionDiv {
+.infoTextDiv {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+    gap: 8px;
+}
+.infoSection {
+    background:linear-gradient(to top, rgb(255, 111, 0) 10%, var(--background-eps) 100%);
+    margin: 5px;
+    padding: 1rem;
+    border-radius: .2rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.infoSection img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.categoryLi{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    
+}
+.categoryLi li {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 780px){
+    
+    .infoSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   
 }

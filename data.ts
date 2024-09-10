@@ -10,7 +10,7 @@ export const Api = [
         {id:"kimetsu-no-yaiba-episodio-1", ep: "1", duration: "24", url: "https://www.youtube.com/embed/VQGCKyvzIM4", img: "/images/animes/kimetsu-yaiba/t1ep1.jpg", date:"2024/09/03" }, 
         {id:"kimetsu-no-yaiba-episodio-2", ep: "2", duration: "24", url: "https://www.youtube.com/embed/6vMuWuWlW4I?si=IBQ6HWROVkyrbKcR", img: "/images/animes/kimetsu-yaiba/t1ep2.jpg", date:"2024/09/04"}],
         carousel: {img: "http://localhost:3000/images/animes/kimetsu-yaiba/poster.jpg" },
-        details: { description: "Japão, era Taisho. Tanjiro, um bondoso jovem que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um demônio. E pra piorar, Nezuko, sua irmã mais nova e única sobrevivente, também foi transformada num demônio. Arrasado com esta sombria realidade, Tanjiro decide se tornar um matador de demônios para fazer sua irmã voltar a ser humana, e para matar o demônio que matou sua família. Um triste conto sobre dois irmãos, onde os destinos dos humanos e dos demônios se entrelaçam, começa agora.", eps: '26', category: ["Shounen", "Ação", "Fantasia"] },
+        details: { description: "Japão, era Taisho. Tanjiro, um bondoso jovem que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um demônio. E pra piorar, Nezuko, sua irmã mais nova e única sobrevivente, também foi transformada num demônio. Arrasado com esta sombria realidade, Tanjiro decide se tornar um matador de demônios para fazer sua irmã voltar a ser humana, e para matar o demônio que matou sua família. Um triste conto sobre dois irmãos, onde os destinos dos humanos e dos demônios se entrelaçam, começa agora.", eps: '26', category: ["Ação", "Fantasia"] },
       },
 
       {

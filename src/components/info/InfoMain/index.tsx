@@ -1,13 +1,14 @@
 import { WrapperMain } from "components/_ui/Wrapper/wrapperMain"
-
+import styles from "./page.module.scss"
 
 import InfoEp from "../InfoEp"
 import AnimeDetails from "../AnimeDetails"
+import EpLi from "components/_ui/EpsList/EpLi"
 
-interface IEps{
-    ep:string,
-    url:string,
-    img:string
+interface IEps {
+    ep: string,
+    url: string,
+    img: string
 }
 
 export const InfoAnime = ({ data }: any) => {
@@ -18,15 +19,16 @@ export const InfoAnime = ({ data }: any) => {
     const url: any = data.eps.map((d: { url: any }) => d.url)
     return (
         <WrapperMain>
-                <AnimeDetails ep={ep} category={category} data={data} poster={poster} key={`${data.title}-details`} />
-            <section>
-                <ul>
-                    {data?.eps.length > 1 ? data.eps.map((ep:IEps) =>
+            <AnimeDetails ep={ep} category={category} data={data} poster={poster} key={`${data.title}-details`} />
+            <section className={styles.infoSectionDiv}>
+                <ul className={styles.ul}>
+                    {data?.eps.length > 1 ? data.eps.map((ep: IEps) =>
                         <InfoEp key={`${data.title}-${ep.ep}`} data={data} url={ep.url} ep={ep.ep} img={ep.img} id={data.id} />
                     )
                         :
                         <InfoEp key={`${data.title}-${ep}`} data={data} url={url} ep={ep} img={img} id={data.id} />
                     }
+                    
                 </ul>
             </section>
         </WrapperMain>

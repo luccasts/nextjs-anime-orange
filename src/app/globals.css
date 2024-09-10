@@ -1,6 +1,7 @@
 :root {
   --background-eps:rgb(227, 132, 0);
-  --font-color-footer:rgb(227, 132, 0);
+  --background-eps-top: rgb(255, 111, 0) ;
+  --font-color:rgb(227, 132, 0);
 }
 * {
   box-sizing: border-box;

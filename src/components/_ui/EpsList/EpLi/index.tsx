@@ -12,19 +12,19 @@ type ApiProps = {
 
 }
 
-export default function EpLi({ apiAnime}: ApiProps) {    
+export default function EpLi({ apiAnime }: ApiProps) {
 
-    let img:any = (apiAnime.eps.map((e: { img:string; }) => e.img))
-    let ep:any = (apiAnime.eps.map((e: { ep: string; }) => e.ep))
+    let img: any = (apiAnime.eps.map((e: { img: string; }) => e.img))
+    let ep: any = (apiAnime.eps.map((e: { ep: string; }) => e.ep))
     const eps = (apiAnime.eps)
-    if(img.length > 1) {
+    if (img.length > 1) {
         let last
-        for(let i =0; i < img.length; i++){
+        for (let i = 0; i < img.length; i++) {
             last = eps[i]
         }
         img = last?.img
-        ep  = last?.ep
-        
+        ep = last?.ep
+
     }
     const link = handleLink(apiAnime.title, ep)
 
@@ -41,5 +41,5 @@ export default function EpLi({ apiAnime}: ApiProps) {
             </div>
         </li>
     )
-    
+
 }
