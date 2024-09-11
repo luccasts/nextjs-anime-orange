@@ -1,9 +1,9 @@
 import { WrapperMain } from "components/_ui/Wrapper/wrapperMain"
 import styles from "./page.module.scss"
 
-import InfoEp from "../InfoEp"
 import AnimeDetails from "../AnimeDetails"
-import EpLi from "components/_ui/EpsList/EpLi"
+
+import Ep from "components/_ui/Ep"
 
 interface IEps {
     ep: string,
@@ -23,12 +23,12 @@ export const InfoAnime = ({ data }: any) => {
             <section className={styles.infoSectionDiv}>
                 <ul className={styles.ul}>
                     {data?.eps.length > 1 ? data.eps.map((ep: IEps) =>
-                        <InfoEp key={`${data.title}-${ep.ep}`} data={data} url={ep.url} ep={ep.ep} img={ep.img} id={data.id} />
+                        <Ep page={"info"} key={`${data.title}-${ep.ep}`} data={data} DataEp={ep.ep} DataImg={ep.img} />
                     )
                         :
-                        <InfoEp key={`${data.title}-${ep}`} data={data} url={url} ep={ep} img={img} id={data.id} />
+                        <Ep key={`${data.title}-${ep}`} page="info" data={data} DataEp={ep} DataImg={img} />
                     }
-                    
+
                 </ul>
             </section>
         </WrapperMain>
