@@ -1,10 +1,8 @@
 # Anime Orange
 
+### 🎬 Vídeo do Projeto || Project video
+https://github.com/user-attachments/assets/1db7b31a-693c-4518-9a94-d694fa7b2916
 
-## Foto do projeto || Screenshot of Project
-
-
-### Vídeo || Video
 
 
 ## 🛠️ Funcionalidades do projeto  || Project Features
@@ -12,21 +10,24 @@
 <p>
 Contendo na página inicial um banner de cartazes, logo mais abaixo as mais recentes adicições de episódios. </br>
 Existindo a página os episódios, podendo avançar e voltar caso exista os episódios.</br>
-E outra página das informações específicas de cada anime.</br>
-Podendo realizar buscas
-</p>
-
-<p>
-Containing a poster banner on the home page, below the most recent episode additions. 
-There are episodes on the page, and you can go forward and back if there are episodes.
-And another page with specific information about each anime.
-Being able to perform searches
+Outra página das informações específicas de cada anime.</br>
+E pode realizar buscas pelo nome.
 </p>
 
 - Assistir trailer dos Animes cadastrados.  
 - Pesquisar itens pelo Nome.
 
-## ✔️ Técnicas e tecnologias utilizadas
+<p>
+Containing a poster banner on the home page, below the most recent episode additions. </br>
+There are episodes on the page, and you can go forward and back if there are episodes.</br>
+Another page with specific information about each anime.</br>
+And you can search by name.
+</p>
+
+- Watch trailers for registered Animes.  
+- Search items by Name.
+
+## ✔️ Técnicas e tecnologias utilizadas || Techniques and technologies used
 
 O projeto Anime Orange utiliza as seguintes tecnologias e bibliotecas:
 
@@ -34,29 +35,21 @@ O projeto Anime Orange utiliza as seguintes tecnologias e bibliotecas:
 - `TypeScript` - Linguagem de programação principal
 - `SCSS` - Tecnologia para estilização
 
-## ⚙️ Abrir e rodar o projeto
+The Anime Orange project uses the following technologies and libraries:
 
-Para executar o projeto Anime Orange em seu ambiente local, siga estas etapas:
+- `NextJS` – Framework that structures the website
+- `TypeScript` - Core Programming Language
+- `SCSS` - Technology for styling
 
-1. Certifique-se de ter o Node.js instalado em sua máquina.
-
-2. Baixe o repositório do projeto:
-
-3. Extraia os arquivos para uma pasta de sua preferência.
-
-4. Navegue até a pasta em questão via terminal (cmd):
+## ⚙️ Download the project
 
 ```bash
 cd AnimeOrange
 ```
 
-5. Instale as dependências usando o npm:
-
 ```bash
 npm install
 ```
-
-6. Inicie o projeto localmente:
 
 ```bash
 npm run dev
