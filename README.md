@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Anime Orange
 
-## Getting Started
 
-First, run the development server:
+## Foto do projeto || Screenshot of Project
+
+
+### Vídeo || Video
+
+
+## 🛠️ Funcionalidades do projeto  || Project Features
+
+<p>
+Contendo na página inicial um banner de cartazes, logo mais abaixo as mais recentes adicições de episódios. </br>
+Existindo a página os episódios, podendo avançar e voltar caso exista os episódios.</br>
+E outra página das informações específicas de cada anime.</br>
+Podendo realizar buscas
+</p>
+
+<p>
+Containing a poster banner on the home page, below the most recent episode additions. 
+There are episodes on the page, and you can go forward and back if there are episodes.
+And another page with specific information about each anime.
+Being able to perform searches
+</p>
+
+- Assistir trailer dos Animes cadastrados.  
+- Pesquisar itens pelo Nome.
+
+## ✔️ Técnicas e tecnologias utilizadas
+
+O projeto Anime Orange utiliza as seguintes tecnologias e bibliotecas:
+
+- `NextJS` - Framework que faz a estruturação do site
+- `TypeScript` - Linguagem de programação principal
+- `SCSS` - Tecnologia para estilização
+
+## ⚙️ Abrir e rodar o projeto
+
+Para executar o projeto Anime Orange em seu ambiente local, siga estas etapas:
+
+1. Certifique-se de ter o Node.js instalado em sua máquina.
+
+2. Baixe o repositório do projeto:
+
+3. Extraia os arquivos para uma pasta de sua preferência.
+
+4. Navegue até a pasta em questão via terminal (cmd):
+
+```bash
+cd AnimeOrange
+```
+
+5. Instale as dependências usando o npm:
+
+```bash
+npm install
+```
+
+6. Inicie o projeto localmente:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

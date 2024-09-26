@@ -4,51 +4,44 @@ import { WrapperFooter } from "../Wrapper/wrapperFooter"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export const Footer = () => {
-    
+
     return (
         <WrapperFooter>
-            <div className={styles.FooterBackground}>
-
-                                
-                    
-
-
-                <section className={styles.FooterSection}>
-                    <nav className={styles.FooterNav}>
-                        <div className={styles.FooterLink}>
-                            <h4>
-                                <Link href={"/"}>
-                                    Anime Brand
-                                </Link>
-                            </h4> 
-                        </div>
-                        <ul className={` ${styles.FooterUl} ${styles.FooterUlLeft} ${styles.FooterLink}`}>
-                            <li>
-
-                            </li>
-                            <li>
-                                <Link href={"/animes"}>Animes</Link>
-                            </li>
-
-                            
-                        </ul>
-                    </nav> 
-                </section>
-
-                <section className={styles.FooterSection}>
-                    <h4>Rede Sociais</h4>
+            <section className={styles.Footer}>
+                <div className={styles.Footer__Div}>
                     <nav>
-                        <ul className={` ${styles.FooterUl} ${styles.FooterLink}`}>
-                            <li>
-                                <a target="_blank" href={"https://www.linkedin.com/in/lucastsilva-dev/"}>< FaLinkedinIn/> Linkedin </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href={"https://github.com/luccasts"}><FaGithub />Github</a>
-                            </li>
-                        </ul>
+                        <Link href={"/"}>
+                            <h4>
+
+                                Anime Orange
+
+                            </h4>
+                        </Link>
+                        {/* <ul className={` ${styles.FooterUl} ${styles.FooterUlLeft} ${styles.Footer__Nav__Link}`}>
+                                <li>Categorias</li>
+                                <li><Link href={"/animes"}>Animes</Link> </li> 
+                            </ul> */}
                     </nav>
-                </section>
-            </div>
+
+                    <div className={styles.Footer__Div__SocialMedia}>
+                        <h4>Rede Sociais</h4>
+                        <nav>
+                            <ul className={`${styles.FooterUl} ${styles.FooterLink}`}>
+                                <li>
+                                    <a target="_blank" href={"https://www.linkedin.com/in/lucastsilva-dev/"}>< FaLinkedinIn /> Linkedin </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href={"https://github.com/luccasts"}><FaGithub />Github</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div className={styles.Footer__Direitos}>
+                    ©  Direitos Reservados luccasts
+                </div>
+            </section>
         </WrapperFooter>
     )
 }

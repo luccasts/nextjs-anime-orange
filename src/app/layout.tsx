@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Anime Brand',
+  title: 'AnimeOrange',
   description: 'Assistir animes online',
 }
 
