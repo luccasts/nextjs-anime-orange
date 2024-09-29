@@ -8,8 +8,8 @@
     color:white;
 
     // background-color: #222222;
-    background-color: white;
-    color: black;
+    background-color: rgb(18, 18, 18);
+    color: rgb(234, 234, 234);
     border: none;
     width: 100%;
     height: 100%;
@@ -19,8 +19,7 @@
  
 .BsX {
     font-size: 30px;
-    color:rgb(255, 255, 255);
-    color: black;
+    color: var(--X-search-color);
     position: absolute;
     right: 0;
 
@@ -40,11 +39,10 @@
 }
 .BsLeftSearch{
     padding: 5px;
-    
-    color: white;
-    color: black;
-    border-right: 1px solid rgb(126, 126, 126);
+    color: var(--X-search-color);
+    border-right: 1px solid rgb(26, 26, 26);
     font-size: 25px;
+    margin-top: 2px;
     
 }
 

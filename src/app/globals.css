@@ -3,6 +3,8 @@
   --background-eps-top: rgb(255, 111, 0) ;
   --font-color:rgb(227, 132, 0);
   --background-nav:rgb(227, 132, 0);
+  --hamburger-color:rgb(227, 132, 0); 
+  --X-search-color:rgb(227, 132, 0);
 }
 * {
   box-sizing: border-box;

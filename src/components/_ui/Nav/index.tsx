@@ -10,7 +10,7 @@ export const Header = () => {
         <header className={styles.container}>
             <div className={styles.header}>
                 <nav className={styles.nav}>
-                   
+                   <Hamburger />
                 <h1>
                     <Link href={"/"}>AnimeOrange</Link>
                 </h1>
