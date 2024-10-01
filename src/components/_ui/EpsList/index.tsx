@@ -8,7 +8,9 @@ export default function EpsList({ data }: any) {
 
   return (
     <section className={styles.section_container}>
-      <Title title={"Lançados recentemente"} />
+      <Title>
+        <h2>Lançados recentemente</h2>
+      </Title>
       <ul className={styles.ul}>
         {data != undefined ? data.map((p: IAnimeAPI) => (
           <Ep page='home' key={p.id} data={p} />

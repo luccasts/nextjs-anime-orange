@@ -8,7 +8,7 @@ export default function contextshandlerAPI(
 ) {
     const { query } = req
     const { id }: any = query
-    const anime:any = Api.map((a) => a.animes.filter((a) => a.title.toLocaleLowerCase().indexOf(id.toLocaleLowerCase()) !== -1))
+    const anime: any = Api.map((a) => a.animes.filter((a) => a.title.toLocaleLowerCase().indexOf(id.toLocaleLowerCase()) !== -1))
 
     // const anime = animeContext?.find((a) => a.title.toLocaleLowerCase().indexOf(id.toLocaleLowerCase()) !== -1)
 

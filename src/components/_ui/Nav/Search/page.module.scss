@@ -1,11 +1,11 @@
 .input {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     position: relative;
- }
+}
 
- .input input {
-    color:white;
+.input input {
+    color: white;
 
     // background-color: #222222;
     background-color: rgb(18, 18, 18);
@@ -15,8 +15,8 @@
     height: 100%;
     border-radius: .25rem;
     padding-left: 2rem;
- }
- 
+}
+
 .BsX {
     font-size: 30px;
     color: var(--X-search-color);
@@ -27,23 +27,26 @@
 }
 
 .BsSearch {
+    color: var(--X-search-color);
     font-size: 22px;
     position: absolute;
     right: 0;
 }
-.BbButton{
+
+.BbButton {
     border: none;
     left: 0px;
     position: absolute;
     background: transparent;
 }
-.BsLeftSearch{
+
+.BsLeftSearch {
     padding: 5px;
     color: var(--X-search-color);
     border-right: 1px solid rgb(26, 26, 26);
     font-size: 25px;
     margin-top: 2px;
-    
+
 }
 
 .input input::-webkit-search-cancel-button {
@@ -53,4 +56,28 @@
     right: 0;
     padding: 6px;
     opacity: 0;
- }
+}
+
+@media screen and (max-width:780px) {
+    .input{
+        input {
+           padding: .8rem .8rem .8rem 2.2rem;
+        }
+
+        .BbButton {
+            border: none;
+            left: 0px;
+            position: absolute;
+            background: transparent;
+        }
+        
+        .BsLeftSearch {
+            padding: 5px;
+            color: var(--X-search-color);
+            border-right: 1px solid rgb(26, 26, 26);
+            font-size: 30px;
+            margin-top: 2px;
+        
+        }
+    }
+}

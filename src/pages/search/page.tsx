@@ -14,7 +14,9 @@ export default function SearchPage({ data, error, isLoading }: any) {
       <Header />
       <WrapperMain>
         <WrapperSection>
-          <Title title={"Resultado da pesquisa"} />
+          <Title>
+          <h1>Resultado da pesquisa</h1>
+          </Title>
           <ul className={styles.list}>
             {data.map((d: any[]) => d.map((d) => <PosterAnime key={d.id} apiAnime={d} />))}
           </ul>

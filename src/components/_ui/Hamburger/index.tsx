@@ -3,9 +3,10 @@ import { useState } from 'react'
 import styles from './page.module.scss'
 import getCategory from 'services/getCategory'
 import Link from 'next/link'
+import { Title } from '../Title'
 
 export default function Hamburger() {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     function handleOpen() {
         console.log('teste')
@@ -31,56 +32,59 @@ export default function Hamburger() {
 
             </div>
             {open ? <nav className={styles.Hamburger__Nav}>
+                <Link href={"/"}>
+                        <h2 className={`defaultTitle` }>AnimeOrange</h2>
+                </Link>
                 <h3>Todos os Animes</h3>
                 <hr></hr>
                 <h3>Categoria</h3>
                 <ul>
                     <li>
-                        <Link href={'category/fantasia'}>
+                        <Link as={'/category/fantasia'} href={'/category/fantasia'}>
                             Fantasia
                         </Link>
                     </li>
                     <li>
-                        <Link href={'category/aventura'}>
+                        <Link href={'/category/aventura'}>
                             Aventura
                         </Link>
                     </li>
                     <li>
-                        <Link href={'category/acao'}>
-                           Ação 
+                        <Link href={'/category/acao'}>
+                            Ação
                         </Link>
                     </li>
                     <li>
-                    <Link href={'category/comedia'}>
+                        <Link href={'/category/comedia'}>
                             Comédia
-                            </Link>
-                        
+                        </Link>
+
                     </li>
                     <li>
-                    <Link href={'category/romance'}>
+                        <Link href={'/category/romance'}>
                             Romance
-                            </Link>
+                        </Link>
                     </li>
                     <li>
-                    <Link href={'category/sobrenatural'}>
+                        <Link href={'/category/sobrenatural'}>
                             Sobrenatural
-                            </Link>
+                        </Link>
                     </li>
 
                     <li>
-                    <Link href={'category/suspense'}>
+                        <Link href={'/category/suspense'}>
                             Suspense
-                            </Link>
+                        </Link>
                     </li>
                     <li>
-                    <Link href={'category/drama'}>
+                        <Link href={'/category/drama'}>
                             Drama
-                            </Link>
+                        </Link>
                     </li>
 
-                    <li> <Link href={'category/violencia'}>
-                            Violência
-                            </Link>
+                    <li> <Link href={'/category/violencia'}>
+                        Violência
+                    </Link>
                     </li>
                 </ul>
             </nav> : null}

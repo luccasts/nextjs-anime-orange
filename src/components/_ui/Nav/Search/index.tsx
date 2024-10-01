@@ -4,8 +4,8 @@ import styles from "./page.module.scss"
 import { FormEvent, useState } from "react";
 import { Input } from "./Input";
 
-export const Search = () => {
-    const [input, setInput] = useState<Boolean>()
+export const Search = ({input, setInput}:any) => {
+    // const [input, setInput] = useState<Boolean>()
     const [search, setSearch] = useState('')
     function handleClick() {
         if (input == false || input == undefined) {

@@ -1,12 +1,10 @@
-import styles from  './page.module.scss'
-interface Ititle{
-    title:string
-}
+import styles from './page.module.scss'
 
-export const Title = ({title}:Ititle) => {
+
+export const Title = ({ children } : any) => {
     return (
         <div className={styles.title}>
-            <h2>{title}</h2>
+            {children}
         </div>
     )
 }

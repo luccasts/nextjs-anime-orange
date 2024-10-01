@@ -1,21 +1,20 @@
 .title{
     margin: 2rem auto 2rem auto;
     border-radius: .2rem;
-
     background-color: transparent;
-    // box-shadow: #d68aff3c 0px 1px 4px, #d68aff69 0px 0px 0px 3px;
-    // box-shadow:  #1c1c1c3c 0px 1px 4px, #13131369 0px 0px 0px 3px;
     border:0px 0px 1px 0px solid #fff;
     border-bottom: 1px solid #13131389;
     width: 100%;
+
+
+    h1, h2, h3 , h4, h5, h6{
+        color:var(--background-eps);
+        // color:rgb(209, 209, 209);
+        padding: 1rem;
+        text-align: center;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
 }
 
-.title > h2 {
-    color:var(--background-eps);
-    // color:rgb(209, 209, 209);
-    padding: 1rem;
-    text-align: center;
-    letter-spacing: 1.5px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
