@@ -1,12 +1,14 @@
-import useSWR from 'swr'
+import useSWR from "swr";
 
-import {IAnimeAPI, ResponseError} from "../interfaces"
+import { IAnimeAPI, ResponseError } from "../interfaces";
 
-import { getFetcher } from "common/getFetcher"
+import { getFetcher } from "common/getFetcher";
 
-export default function getAnimes(){    
-      const {data, error, isLoading} =useSWR<
-      IAnimeAPI, ResponseError>(() => (`http://localhost:3000/api/animes`), getFetcher)
-      return ({data, error, isLoading})       
-
+export default function getAnimes() {
+  const { data, error, isLoading } = useSWR<IAnimeAPI, ResponseError>(
+    () => `https://animeorange.netlify.app/api/animes`,
+    getFetcher
+  );
+  console.log(data);
+  return { data, error, isLoading };
 }

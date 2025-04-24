@@ -1,14 +1,15 @@
-import { IAnimeSearchAPI} from "interfaces";
+import { IAnimeSearchAPI } from "interfaces";
 
 import useSWR from "swr";
-import { getFetcher } from "common/getFetcher"
-import { ResponseError } from "../interfaces"
+import { getFetcher } from "common/getFetcher";
+import { ResponseError } from "../interfaces";
 
 export default function getEp(query: any) {
-    const { data, error, isLoading } = useSWR<
-    IAnimeSearchAPI, ResponseError>(() => (query.id ? `http://localhost:3000/api/eps/${query.id}` : null), getFetcher)
-    
-    return ({ data, error, isLoading })
+  const { data, error, isLoading } = useSWR<IAnimeSearchAPI, ResponseError>(
+    () =>
+      query.id ? `https://animeorange.netlify.app/api/eps/${query.id}` : null,
+    getFetcher
+  );
 
+  return { data, error, isLoading };
 }
-
