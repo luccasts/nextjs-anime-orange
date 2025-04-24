@@ -1,10 +1,8 @@
-import { IAnimeAPI } from "interfaces";
-
 export function handleLink(title:any, id:string){
     const replace = title.replaceAll(" ", "-").toLocaleLowerCase();
     const NospecialCharacters = handleCharacteres(replace);
 
-    const link = `http://localhost:3000/watch/${NospecialCharacters}-episodio-${id}`;
+    const link = `/watch/${NospecialCharacters}-episodio-${id}`;
     return link;
 }
 
@@ -18,5 +16,5 @@ function handleCharacteres(title:string){
 }
 
 export function handleLinkCarousel(id:string){
-    return `http://localhost:3000/info/${id}`  
+    return `/info/${id}`  
 }
