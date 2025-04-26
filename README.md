@@ -1,7 +1,7 @@
 # Anime Orange
 
 ### 🎬 Vídeo do Projeto || Project video
-https://github.com/user-attachments/assets/1db7b31a-693c-4518-9a94-d694fa7b2916
+https://github.com/user-attachments/assets/330f6e86-00da-4ad1-a5a5-e2694b083ecd
 
 
 
