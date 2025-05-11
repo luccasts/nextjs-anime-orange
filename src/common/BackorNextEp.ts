@@ -25,10 +25,10 @@ export default function BackorNextEp(
       indexArray -= 1;
       ep = data.eps[indexArray];
       if (indexArray === -1) {
-        router.push(`info/${data.id}`);
+        router.push(`/info/${data.id}`);
         // window.location.pathname = `/info/${data.id}`;
       } else {
-        router.push(`watch/${ep.id}`);
+        router.push(`/watch/${ep.id}`);
         // window.location.pathname = `/watch/${ep.id}`;
       }
 
