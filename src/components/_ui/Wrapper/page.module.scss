@@ -1,20 +1,20 @@
-.Wrapper{
+.Wrapper {
     max-width: 1280px;
-    width:  calc(100% - 12%) ;
+    width: calc(100% - 12%);
     margin: 0 auto;
     position: relative;
-    
+
 
 }
 
-.WrapperMain{
+.WrapperMain {
     position: relative;
-    
+
     min-height: 100vh;
-   
+
 }
 
-.WrapperFooter{
+.WrapperFooter {
 
     position: relative;
     max-width: 100%;
@@ -23,5 +23,5 @@
     background-color: rgb(21, 21, 21);
     bottom: 0;
     right: 0;
-    margin-top: 64px;
+    margin-top: 300px;
 }
