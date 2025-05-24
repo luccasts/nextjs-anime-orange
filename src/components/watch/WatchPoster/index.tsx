@@ -26,7 +26,7 @@ export const WatchPoster = ({ ep, data }: any) => {
         <div className={`${styles.div_title}`}>
           <div className={`${styles.title}`}>
             <h2>
-              <Link href={`http://localhost:3000/info/${id}`}>
+              <Link href={`https://animeorange.netlify.app/info/${id}`}>
                 {data.title}
               </Link>
             </h2>

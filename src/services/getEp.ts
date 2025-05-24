@@ -1,5 +1,4 @@
 import { IAnimeSearchAPI } from "interfaces";
-
 import useSWR from "swr";
 import { getFetcher } from "common/getFetcher";
 import { ResponseError } from "../interfaces";
